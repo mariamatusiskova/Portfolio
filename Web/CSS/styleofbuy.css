@@ -1,0 +1,93 @@
+@media(max-width: 800px) {
+	p:not(.infotext), div, section, h1, img, table, td, th, a {
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 10%;
+		margin-bottom: 10%;
+	}
+
+	body {
+		min-height: 200vh;
+	}
+}
+
+body {
+	background-color: #000000;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 150vh;
+	right: 0;
+	left: auto;
+}
+
+div.row_one {
+	margin-top: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+}
+
+h1 {
+	color: #6CACE4;
+	font-size: 281.25%;
+	font-family: system-ui, "Helvetica", sans-serif;
+	text-align: center;
+}
+section {
+	color: silver;
+	font-family: system-ui, "Helvetica", sans-serif;
+	font-size: 125%;
+	text-align: center;
+}
+
+section.buy_link {
+	display: flex;
+	flex-direction: column;
+	gap: 15%;
+}
+
+table {
+	border-collapse: collapse;
+	color: #c9cac7;
+}
+
+td, th {
+	padding: 0.625rem 1.875rem;
+	border: solid;
+	color: #c9cac7;
+	border-width: 1%;
+}
+
+th {
+	background-color: #181818;
+}
+
+td {
+	background-color: #282828;
+}
+
+a.ebay, a.heureka, a.kimovil {
+	color: skyblue;
+}
+
+img.blue {
+	animation: top-to-bottom 3s ease-in forwards;
+	border: solid;
+	border-color: #c9cac7;
+	border-radius: 1em;
+	border-width: 1%;
+}
+
+@keyframes top-to-bottom {
+	0% {
+		transform: translateY(100%);
+	}
+
+	100% {
+		transform: translateY(-0%);
+	}
+}

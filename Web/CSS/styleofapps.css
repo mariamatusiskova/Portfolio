@@ -1,0 +1,156 @@
+@media(max-width: 800px) {
+	p:not(.infotext), div, video, h1, img, h4, pre, section, audio {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		flex: 100%;
+	}
+
+	body {
+		min-height: 650vh;
+	}
+
+}
+
+body {
+	background-color: #000000;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 420vh;
+	right: 0;
+	left: auto;
+}
+
+div.row_one {
+	transform: translateX(-4%);
+	margin-top: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+div.row_two {
+	margin-top: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+div.row_three {
+	margin-top: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+div.sound_one {
+	margin-top: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+div.sound_two {
+	margin-top: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+
+p:not(.p1, .p2, .p9, .infotext) {
+	color: #c9cac7;
+	font-family: system-ui, "Helvetica", sans-serif;
+	text-align: left;
+	font-size: 112.5%;
+}
+
+p.p1 {
+	color: #c9cac7;
+	font-family: system-ui, "Helvetica", sans-serif;
+	text-align: left;
+	font-size: 125%;
+	transform: translateX(-3%);
+}
+
+p.p2 {
+	color: #c9cac7;
+	font-family: system-ui, "Helvetica", sans-serif;
+	text-align: center;
+	font-size: 112.5%;
+}
+
+p.p9 {
+	color: #c9cac7;
+	font-family: system-ui, "Helvetica", sans-serif;
+	text-align: center;
+	font-size: 112.5%;
+}
+
+h1 {
+	color: #6CACE4;
+	font-size: 250%;
+	font-family: system-ui, "Helvetica", sans-serif;
+	text-align: center;
+}
+
+img.chromegif {
+	transform: translateX(10%);
+}
+
+h4 {
+	color: #B6D6F2;
+	font-family: system-ui, "Helvetica", sans-serif;
+	font-size: 187.5%;
+}
+
+h4.play, h4.gmail, h4.maps, h4.drive {
+	margin-bottom: 3%;
+}
+
+h4.ring {
+	text-align: center;
+	font-size: 200%;
+}
+
+
+h4.camera {
+	margin-bottom: -2%;
+	text-align: center;
+}
+
+h4.videocamera {
+	margin-bottom: -2%;
+	text-align: center;
+}
+
+h4.gallery {
+	margin-top: 5%;
+	text-align: center;
+}
+
+pre {
+	color: #c9cac7;
+	font-family: system-ui, "Helvetica", sans-serif;
+	text-align: left;
+	font-size: 112.5%;
+	margin-top: -5%;
+}
+
+img.image {
+	width: 70%;
+}
+
+section.dynamic {
+	margin-top: 3%;
+    max-width: 23vw;
+}
+
+section.row {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transform: translateX(5%);
+}

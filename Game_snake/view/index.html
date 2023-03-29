@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="shortcut icon" href="#">
+    <style>
+        body {
+            background-color: grey;
+            height: 100vh;
+        }
+
+        section {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #canvas {
+            text-align: center;
+            box-shadow: black 20px 10px 50px;
+        }
+
+        p {
+            font: 20px Comic Sans MS;
+        }
+
+    </style>
+
+    <script src="../model/node.js" defer></script>
+    <script src="../model/base.js" defer></script>
+    <script src="../model/buttons/levels.js" defer></script>
+    <script src="../model/snake.js" defer></script>
+    <script src="../model/food.js" defer></script>
+    <script src="../model/screens/board.js" defer></script>
+    <script src="../model/screens/home_screen.js" defer></script>
+    <script src="../model/screens/menu/menu.js" defer></script>
+    <script src="../model/screens/menu/options/exit.js" defer></script>
+    <script src="../model/screens/menu/options/newgame.js" defer></script>
+    <script src="../model/screens/menu/options/how.js" defer></script>
+    <script src="../model/screens/settings.js" defer></script>
+    <script src="../model/screens/score.js" defer></script>
+    <script src="../model/screens/help.js" defer></script>
+    <script src="../model/screens/gameover.js" defer></script>
+    <script src="../model/buttons/easy.js" defer></script>
+    <script src="../model/buttons/medium.js" defer></script>
+    <script src="../model/buttons/hard.js" defer></script>
+    <script src="../model/buttons/tryagain.js" defer></script>
+    <script src="../model/buttons/resetscore.js" defer></script>
+    <script src="../model/buttons/sound.js" defer></script>
+    <script src="../controller/mouse.js" defer></script>
+    <script src="../controller/keyboard.js" defer></script>
+    <script src="mainLoop.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <section>
+        <p>Score:<p id="score">0</p></p>
+        <canvas id="canvas" width="600" height="600"></canvas>
+    </section>
+   
+</body>
+</html>

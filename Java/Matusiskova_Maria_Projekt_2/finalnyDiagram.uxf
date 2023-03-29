@@ -1,0 +1,288 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>3</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>450</x><y>426</y><w>102</w><h>105</h></coordinates><panel_attributes>sk.stuba.fiit.bombMaterials.Button::SimpleButton
+--
+~push: boolean
++numberOfButtons: int
+~randomColors: java.util.List
++colors: java.util.List
+--
++SimpleButton(): ctor
++SimpleButton(boolean): ctor
++SimpleButton(int): ctor
++SimpleButton(int, java.util.List): ctor
++list(): void
++pushButton(): void
++checkButton(boolean): void
++turnOnButton(): void
++infoButton(): void
++generateRandomColors(java.util.List): java.util.List
++getRandomColorsList(int): java.lang.String
++getPush(): boolean
++setPush(boolean): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>207</y><w>138</w><h>105</h></coordinates><panel_attributes>sk.stuba.fiit.bomb::MVersionOne
+--
+~numberOfWires: int
+~numberOfCoverButtons: int
+~timeToDefuse: int
+~wire: sk.stuba.fiit.bombMaterials.Wire
+~simpleButton: sk.stuba.fiit.bombMaterials.Button.SimpleButton
+~turnButton: sk.stuba.fiit.bombMaterials.Button.TurnButton
+~buttonWithCover: sk.stuba.fiit.bombMaterials.Button.ButtonWithCover
+~attempts: sk.stuba.fiit.health.Health
+~print: sk.stuba.fiit.generalPrints.Print
++colorsOfWires: java.util.List
+-colorsOfCoverButtons: java.util.List
+--
+~MVersionOne(): ctor
++MVersionOne(): ctor
+#list(): void
+~listYesNo(): void
+~list(java.lang.String): void
++init(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>645</x><y>207</y><w>138</w><h>99</h></coordinates><panel_attributes>sk.stuba.fiit.bomb::HVersionOne
+--
+~numberOfSwitches: int
+~timeToDefuse: int
+~numberOfCoverButtons: int
++remember: java.lang.String
+~attempts: sk.stuba.fiit.health.Health
+~print: sk.stuba.fiit.generalPrints.Print
+~buttonWithCover: sk.stuba.fiit.bombMaterials.Button.ButtonWithCover
+~batteries: sk.stuba.fiit.bombMaterials.Batteries
+~switches: java.util.List
+-colorsOfCoverButtons: java.util.List
+--
+~HVersionOne(): ctor
++HVersionOne(): ctor
+#list(): void
+~listYesNo(): void
+~list(java.lang.String): void
++init(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>432</x><y>321</y><w>102</w><h>72</h></coordinates><panel_attributes>sk.stuba.fiit.bombMaterials::Wire
+--
+~colorOfWire: java.lang.String
+~numberOfWires: int
+~colors: java.util.List
+~randomColors: java.util.List
+--
++Wire(): ctor
++generateRandomColors(java.util.List): java.util.List
++cutWire(java.lang.String): void
++checkWire(boolean): void
++getRandomColorsList(int): java.lang.String
++getNumberOfWires(): int
++setNumberOfWires(int): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>249</y><w>123</w><h>69</h></coordinates><panel_attributes>sk.stuba.fiit.bomb::EVersionTwo
+--
+~numberOfButtons: int
+~timeToDefuse: int
+~simpleButton: sk.stuba.fiit.bombMaterials.Button.SimpleButton
+~attempts: sk.stuba.fiit.health.Health
+~print: sk.stuba.fiit.generalPrints.Print
+~colors: java.util.List
+--
+~EVersionTwo(): ctor
++EVersionTwo(): ctor
+#list(): void
++init(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>396</x><y>243</y><w>78</w><h>69</h></coordinates><panel_attributes>sk.stuba.fiit.bomb::EVersionOne
+--
+~numberOfWires: int
+~timeToDefuse: int
+~wire: sk.stuba.fiit.bombMaterials.Wire
+~attempts: sk.stuba.fiit.health.Health
+~print: sk.stuba.fiit.generalPrints.Print
+~colors: java.util.List
+--
+~EVersionOne(): ctor
++EVersionOne(): ctor
+#list(): void
++init(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>147</x><y>246</y><w>72</w><h>63</h></coordinates><panel_attributes>sk.stuba.fiit.bomb::EVersionThree
+--
+~numberOfSwitches: int
+~timeToDefuse: int
+~attempts: sk.stuba.fiit.health.Health
+~print: sk.stuba.fiit.generalPrints.Print
+~switches: java.util.List
+--
+~EVersionThree(): ctor
++EVersionThree(): ctor
+#list(): void
++init(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>594</y><w>102</w><h>57</h></coordinates><panel_attributes>sk.stuba.fiit.bombMaterials.Button::ButtonWithCover
+--
+~correctButtons: java.lang.String
+~push: boolean
+--
++ButtonWithCover(): ctor
++list(): void
++pushButton(): void
++checkButton(boolean): void
++getPush(): boolean
++setPush(boolean): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>327</x><y>537</y><w>102</w><h>57</h></coordinates><panel_attributes>/sk.stuba.fiit.bombMaterials.Button::Button/
+--
+--
++Button(): ctor
++list(): void
++pushButton(): void
++checkButton(boolean): void
++pushButton(java.lang.String): void
++getPush(): boolean
++setPush(boolean): void
++pushButton(java.lang.String, java.lang.String): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>537</y><w>93</w><h>54</h></coordinates><panel_attributes>sk.stuba.fiit.bombMaterials.Button::TurnButton
+--
+~push: boolean
+--
++TurnButton(): ctor
++list(): void
++pushButton(): void
++checkButton(boolean): void
++getPush(): boolean
++setPush(boolean): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>402</x><y>165</y><w>63</w><h>54</h></coordinates><panel_attributes>sk.stuba.fiit.levels::Easy
+--
+~number: int
+-n1: int
+-n2: int
+-n3: int
+--
++Easy(): ctor
+~generateRandomELevel(): int
+~init(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>498</x><y>681</y><w>66</w><h>48</h></coordinates><panel_attributes>sk.stuba.fiit.bomb::Defusing
+--
+~levels: sk.stuba.fiit.levels.Levels
+--
++Defusing(): ctor
++init(): void
+#list(): void
+#explosion(): void
+#bombDefused(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>588</y><w>90</w><h>48</h></coordinates><panel_attributes>sk.stuba.fiit.health::Health
+--
+~healthAttempts: int
+--
++Health(): ctor
+#explosion(): void
++lifeLoss(sk.stuba.fiit.timer.Countdown): void
++getHealth(): int
++setHealth(): int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>60</y><w>75</w><h>42</h></coordinates><panel_attributes>sk.stuba.fiit.bombMaterials::User
+--
+~levels: sk.stuba.fiit.levels.Levels
+~print: sk.stuba.fiit.generalPrints.Print
+--
++User(): ctor
++nameUserData(): void
+~init(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>633</x><y>693</y><w>93</w><h>42</h></coordinates><panel_attributes>sk.stuba.fiit.timer::Countdown
+--
+~timer: java.util.Timer
+~seconds: int
+--
++Countdown(int): ctor
++stop(): void
+~access$0(sk.stuba.fiit.timer.Countdown): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>363</x><y>60</y><w>93</w><h>42</h></coordinates><panel_attributes>sk.stuba.fiit.singleton::UserData
+--
+-instance: sk.stuba.fiit.singleton.UserData
++name: java.lang.String
+--
+~UserData(): ctor
+-UserData(): ctor
++getInstance(): sk.stuba.fiit.singleton.UserData
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>111</y><w>75</w><h>39</h></coordinates><panel_attributes>sk.stuba.fiit.levels::Levels
+--
+~listOfLevels: java.util.List
+~print: sk.stuba.fiit.generalPrints.Print
+--
++Levels(): ctor
+~printLevels(): void
++init(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>321</x><y>642</y><w>69</w><h>36</h></coordinates><panel_attributes>sk.stuba.fiit.bombMaterials::Switch
+--
+--
++Switch(): ctor
++turnOnSwitch(): void
++turnOffSwitch(): void
++checkSwitch(boolean): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>465</y><w>75</w><h>27</h></coordinates><panel_attributes>sk.stuba.fiit.bombMaterials::Password
+--
+--
++Password(): ctor
+~typePassword(boolean): void
+~checkPassword(boolean): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>744</x><y>321</y><w>75</w><h>30</h></coordinates><panel_attributes>sk.stuba.fiit.bombMaterials::Batteries
+--
+--
++Batteries(): ctor
++list(java.lang.String): void
++removeBatteries(boolean): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>753</x><y>732</y><w>126</w><h>33</h></coordinates><panel_attributes>sk.stuba.fiit.timer::Countdown$ExpirationTime
+--
+~this$0: sk.stuba.fiit.timer.Countdown
+--
+~Countdown$ExpirationTime(sk.stuba.fiit.timer.Countdown): ctor
++run(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>573</x><y>165</y><w>75</w><h>33</h></coordinates><panel_attributes>sk.stuba.fiit.levels::Hard
+--
+~v1: sk.stuba.fiit.bomb.HVersionOne
+--
++Hard(): ctor
+~init(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>165</y><w>75</w><h>33</h></coordinates><panel_attributes>sk.stuba.fiit.levels::Medium
+--
+~v1: sk.stuba.fiit.bomb.MVersionOne
+--
++Medium(): ctor
+~init(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>426</y><w>66</w><h>27</h></coordinates><panel_attributes>sk.stuba.fiit.bombMaterials::Key
+--
+--
++Key(): ctor
+~turnKey(boolean): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>486</x><y>24</y><w>66</w><h>24</h></coordinates><panel_attributes>sk.stuba.fiit.bombMaterials::Main
+--
+--
++Main(): ctor
++main(java.lang.String[]): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>795</x><y>123</y><w>63</w><h>27</h></coordinates><panel_attributes>sk.stuba.fiit.generalPrints::Print
+--
+--
++Print(): ctor
++incorrectInput(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>591</x><y>744</y><w>51</w><h>27</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+sk.stuba.fiit.bomb::Bomb
+--
+--
++init(): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>516</x><y>48</y><w>9</w><h>18</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>516</x><y>99</y><w>9</w><h>18</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>516</x><y>147</y><w>9</w><h>18</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>153</y><w>186</w><h>12</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;600;20</additional_attributes></element><element><id>Relation</id><coordinates><x>609</x><y>156</y><w>9</w><h>15</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;30;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>156</y><w>9</w><h>15</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;30;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>516</x><y>156</y><w>9</w><h>15</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;30;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>408</x><y>216</y><w>9</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>519</x><y>195</y><w>9</w><h>18</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>645</x><y>189</y><w>24</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;60;10;60;60</additional_attributes></element><element><id>Relation</id><coordinates><x>192</x><y>225</y><w>276</w><h>27</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;70;10;20;900;20</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>228</y><w>9</w><h>21</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>381</x><y>228</y><w>9</w><h>27</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>561</x><y>708</y><w>78</w><h>9</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>453</x><y>75</y><w>33</w><h>9</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>552</x><y>129</y><w>249</w><h>9</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>810;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>687</x><y>303</y><w>33</w><h>312</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>90;10;90;1020;10;1020</additional_attributes></element><element><id>Relation</id><coordinates><x>552</x><y>75</y><w>66</w><h>12</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>Relation</id><coordinates><x>609</x><y>78</y><w>9</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>774</x><y>303</y><w>9</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>705</x><y>732</y><w>54</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80;160;80</additional_attributes></element><element><id>Relation</id><coordinates><x>426</x><y>567</y><w>30</w><h>9</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>633</y><w>9</w><h>66</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;200;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>507</x><y>309</y><w>9</w><h>18</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>309</y><w>9</w><h>18</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>306</y><w>510</w><h>492</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>20;10;10;1620;1680;1620;1680;1430</additional_attributes></element><element><id>Relation</id><coordinates><x>561</x><y>633</y><w>69</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;190;210;190;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>456</y><w>18</w><h>177</h></coordinates><panel_attributes></panel_attributes><additional_attributes>40;570;10;570;10;10;40;10</additional_attributes></element><element><id>Relation</id><coordinates><x>216</x><y>264</y><w>111</w><h>405</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10;100;1330;350;1330</additional_attributes></element><element><id>Relation</id><coordinates><x>387</x><y>309</y><w>180</w><h>363</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>580;10;580;1190;10;1190</additional_attributes></element><element><id>Relation</id><coordinates><x>558</x><y>303</y><w>102</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>320;10;320;370;10;370</additional_attributes></element><element><id>Relation</id><coordinates><x>348</x><y>315</y><w>9</w><h>228</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;740</additional_attributes></element><element><id>Relation</id><coordinates><x>402</x><y>408</y><w>165</w><h>135</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;430;10;20;530;20</additional_attributes></element><element><id>Relation</id><coordinates><x>561</x><y>303</y><w>141</w><h>387</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;1270;90;1270;90;880;450;880;450;10</additional_attributes></element><element><id>Relation</id><coordinates><x>102</x><y>228</y><w>402</w><h>492</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>1320;1620;10;1620;20;10;310;10</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>309</y><w>9</w><h>111</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;350</additional_attributes></element><element><id>Relation</id><coordinates><x>534</x><y>309</y><w>51</w><h>378</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;1240;10;1220;150;1220;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>57</x><y>228</y><w>540</w><h>537</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>1780;1770;10;1760;20;10;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>591</x><y>309</y><w>12</w><h>438</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>20;1440;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>639</x><y>303</y><w>105</w><h>468</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;1540;330;1540;330;10</additional_attributes></element><element><id>Relation</id><coordinates><x>729</x><y>138</y><w>72</w><h>75</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>220;10;10;15;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>615</x><y>147</y><w>186</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>600;10;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>264</x><y>0</y><w>558</w><h>234</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>1840;410;1830;20;10;15;10;760</additional_attributes></element><element><id>Relation</id><coordinates><x>723</x><y>306</y><w>9</w><h>396</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;1300</additional_attributes></element></diagram>
